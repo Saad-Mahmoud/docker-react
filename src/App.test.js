@@ -12,5 +12,7 @@ test("render p element", () => {
 
   screen.debug();
 
-  expect(screen.getByText("I was changed!")).toBeInTheDocument();
+  expect(
+    screen.getByText("I was changed on the feature branch")
+  ).toBeInTheDocument();
 });
